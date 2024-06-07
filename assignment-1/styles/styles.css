@@ -1,0 +1,322 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fceabb;
+    /* Light yellow background */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    /* Dark text color */
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Dark transparent background */
+    color: #fff;
+    /* White text color */
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    /* Large header font size */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    /* White text shadow */
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.dish {
+    background-color: #fff;
+    /* White background */
+    border: 1px solid #ddd;
+    /* Light gray border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dish:hover {
+    transform: translateY(-5px);
+    /* Hover effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dish img {
+    width: 100%;
+    height: 200px;
+    /* Fixed height for images */
+    object-fit: cover;
+}
+
+.dish .description {
+    padding: 15px;
+    background-color: #f9f9f9;
+    /* Light gray background for description */
+}
+
+.dish h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    /* Medium header font size */
+    color: #333;
+    /* Dark text color */
+    text-align: center;
+}
+
+.dish p {
+    margin-bottom: 0;
+    color: #666;
+    /* Medium gray text color */
+    text-align: center;
+}
+
+.chef-cafe-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    /* White background */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.chef-details,
+.cafe-details {
+    flex: 1;
+    padding: 20px;
+}
+
+.chef-details {
+    background-color: #fc5c7d;
+    /* Pink background */
+    color: #fff;
+    /* White text color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.chef-details h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    /* Large header font size */
+    margin-bottom: 10px;
+}
+
+.chef-details p {
+    line-height: 1.6;
+    /* Increased line height for readability */
+}
+
+.chef-details img {
+    width: 100%;
+    max-width: 300px;
+    /* Maximum width for images */
+    border-radius: 50%;
+    /* Rounded image */
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.chef-details {
+    background-color: #fc5c7d;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+.chef-details h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    /* Larger font size */
+    margin-bottom: 10px;
+}
+
+.chef-details p {
+    color: #fff;
+    line-height: 1.6;
+}
+
+.chef-details img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Bottom right text */
+.text-block {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    border-radius: 10px;
+    /* Position the background text */
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.5);
+    /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    /* Grey text */
+}
+
+.cafe-details {
+    background-color: #6a82fb;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.cafe-details h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    /* Larger font size */
+    margin-bottom: 10px;
+}
+
+.cafe-details p {
+    color: #fff;
+    line-height: 1.6;
+}
+
+.cafe-details img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-and-social {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px 20px;
+    background-color: #fff;
+    /* White background */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.feedback {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px;
+    /* Maximum width for the feedback section */
+}
+
+.feedback h2 {
+    margin-bottom: 20px;
+    /* Spacing below heading */
+}
+
+.feedback form {
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* Light gray background for form */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.feedback label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    /* Dark text color */
+}
+
+.feedback input,
+.feedback textarea {
+    width: calc(100% - 20px);
+    /* Adjusted width for input elements */
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    /* Light gray border */
+    border-radius: 5px;
+    background-color: #fff;
+    /* White background */
+    transition: border-color 0.3s ease;
+}
+
+.feedback input:focus,
+.feedback textarea:focus {
+    outline: none;
+    border-color: #6a82fb;
+    /* Updated focus color */
+}
+
+.feedback textarea {
+    resize: vertical;
+    height: 120px;
+    /* Fixed height for textarea */
+}
+
+.feedback button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #6a82fb;
+    /* Blue background */
+    color: #fff;
+    /* White text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    /* Medium font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feedback button[type="submit"]:hover {
+    background-color: #4758b3;
+    /* Darker blue on hover */
+}
+
+.social-links {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-links h2 {
+    margin-bottom: 20px;
+    /* Spacing below heading */
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-link {
+    display: inline-block;
+    font-size: 36px;
+    /* Icon size */
+    margin: 0 10px;
+    color: #6a82fb;
+    /* Blue color */
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #475

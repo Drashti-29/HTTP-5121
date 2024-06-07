@@ -1,0 +1,77 @@
+body{
+    padding: 20px;
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    background: darkorchid;
+    color: white;
+  }
+h1{
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    font-size: 32px;
+}
+.heading{
+    border: 4px white;
+    border-radius: 10px;
+    border-style: solid;
+    background-color: rgb(155, 103, 214);
+}
+p{
+    color: white;
+}
+.css-class{
+    font-style: italic;
+    font-stretch: normal;
+    font-size: large;
+    color: white;
+    text-decoration: underline;
+}
+.text {
+    text-shadow: 2px 2px 5px black;
+}
+code{
+background-color: rgb(186, 150, 228) ;
+}
+a:link {
+    color: white;
+  }
+  
+  a:visited {
+    color: #fc0;
+  }
+  
+  a:hover {
+    background-color: rgb(184, 23, 157);
+    color: #03f;
+  }
+  
+  a:active {
+    color: #f3f;
+  }
+.box {
+    height: 100px;
+    width: 500px;
+    box-shadow: 3px 3px 10px black;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: left;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section {
+    width: 48%; /* adjust width as needed */
+}
+.newsletter input[type="email"],
+.newsletter input[type="submit"] {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.submit{
+    border-radius: 10px;
+    background-color: rgb(110, 4, 163);
+}
